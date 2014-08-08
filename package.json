@@ -4,6 +4,10 @@
   "description": "The HTTP REST API supports the complete FileSystem interface for HDFS",
   "homepage": "https://github.com/wdavidw/node-hadoop/",
   "bugs": "https://github.com/wdavidw/node-hadoop/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wdavidw/node-hadoop.git"
+  },
   "author": "David Worms <david@adaltas.com>",
   "contributors": [
     "David Worms <david@adaltas.com>"
@@ -16,16 +20,15 @@
     "hadoop",
     "http"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/wdavidw/node-hadoop.git"
+  "dependencies": {
+    "http-status": "latest",
+    "node-curl": "latest"
   },
   "devDependencies": {
     "coffee-script": "latest",
     "mocha": "latest",
     "should": "latest"
   },
-  "dependencies": {},
   "optionalDependencies": {},
   "scripts": {
     "test": "make test"
